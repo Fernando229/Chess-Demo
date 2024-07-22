@@ -1,0 +1,17 @@
+.wallet-container {
+    border: 1px solid #C1C0BC;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wallet-address-str {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C1C0BC;
+    padding: 10px 12px;
+}
+  

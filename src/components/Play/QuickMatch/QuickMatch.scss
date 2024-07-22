@@ -1,0 +1,60 @@
+.quick-match-area{
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  .quick-match-container{
+    width: 100%;
+    height: 100%;
+
+    .room-selection-item{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: repeating-linear-gradient(45deg, #131215 25%, transparent 25%, transparent 75%, #131215 75%, #131215),repeating-linear-gradient(45deg, #131215 25%, rgba(143, 159, 170, 0.15) 25%, rgba(143, 159, 170, 0.15) 75%, #131215 75%, #131215);
+      background-position: 0 0, 50px 50px;
+      background-size: calc(2 * 50px) calc(2 * 50px);
+      border: 2px solid #454746;
+      border-radius: 12px;
+      cursor: pointer;
+
+      &:hover{
+        border-color: rgba(107, 105, 103, 0.2);
+        box-shadow: 0px 5px 20px rgba(107, 105, 103, 0.2), inset 0px -18.3366px 12.8356px rgba(0, 0, 0, 0.2);
+      }
+
+      .room-selection-badge{
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: white;
+        display: inline-block;
+        padding: 7px 25px;
+        border-radius: 100px;
+        background-color: white;
+        box-shadow: 0px 2px 12px rgba(115, 67, 5, 0.5), inset 0px -18.3366px 12.8356px rgba(0, 0, 0, 0.2);
+      }
+
+      .room-selection-time{
+        font-family: 'Orbitron';
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 75px;
+        color: #c1c0bc;
+      }
+
+      .badge-pvp{
+        background-color: #d0af27;
+      }
+
+      .badge-pvai{
+        background-color: #71ae0d;
+      }
+    }
+  }
+}

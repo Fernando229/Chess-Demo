@@ -1,0 +1,56 @@
+.footer-bar{
+  background-color: #0f0f11;
+}
+.row-first {
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(174, 174, 174, 0.5);
+}
+
+.row-second {
+  padding: 10px 0px;
+}
+
+.contact-info {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  align-content: center;
+  text-transform: lowercase;
+  color: #C1C0BC;
+}
+
+.icon-area{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.copyright-info {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  color: #C1C0BC;
+}
+
+.icon-container {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #C1C1C1;
+  border-radius: 50%;
+  padding: 3px 8px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.icon-item {
+  color: #C1C0BC;
+  margin-right: 23px;
+}

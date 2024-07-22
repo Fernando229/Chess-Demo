@@ -1,0 +1,48 @@
+.header-container {
+  padding: 15px;
+  border-bottom: 1px solid rgb(174, 174, 174, 0.5);
+
+  .brand {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color:#C1C0BC!important;
+    margin-right: 50px;
+  }
+
+  .menu-item {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #C1C0BC;
+    margin-right: 24px;
+  }
+
+  .search-icon {
+    color: #C1C0BC;
+    margin: 10px 23px 0px 0px;
+  }
+
+  .wallet-btn {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #fff;
+    height: 40px;
+    padding: 9px 25px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#0469FF, #0469FF), linear-gradient(to bottom, #076bff, #82b4ff);
+    background-origin: content-box;
+    background-clip: border-box;
+    box-shadow: 0px 2px 12px rgba(73, 119, 17, 0.2);
+  }
+}

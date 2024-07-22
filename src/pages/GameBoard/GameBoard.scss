@@ -1,0 +1,131 @@
+.game-board-pvp{
+  .row{
+    flex-wrap: nowrap;
+  }
+  .board-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .highlight-square{
+      div{
+        background-color: #646d40;
+      }
+    }
+    .greendot-square{
+      position: relative;
+    }
+    .greendot-square:hover{
+      div{
+        background-color: #646d40;
+      }
+    }
+    .greendot-square::before{
+      background-color: #646d40;
+      content: "";
+      width: 30%;
+      height: 30%;
+      border-radius: 100%;
+      position: absolute;
+      left: 35%;
+      top: 35%;
+    }
+    .lastmovef-square{
+      div{
+        background-color: #aaa23a;
+      }
+    }
+    .lastmovet-square{
+      div{
+        background-color: #cdd26a;
+      }
+    }
+  }
+  .victory-btn {
+    position: absolute;
+    border-radius: 10px;
+    bottom: 50px;
+    right: 50px;
+  }
+  .handle-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  
+    .handle-actions {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      align-content: center;
+      text-align: center;
+      p {
+        margin: 5px auto;
+      }
+    }
+    .time-text {
+      font-family: 'Gilroy';
+      font-size: 56px;
+      line-height: 67px;
+      color: white;
+      margin: 40px 0px;
+    }
+    .handle-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #2d2c29;
+      align-items: flex-start;
+      box-shadow: 0px 20px 40px -26px #0c0b09;
+      border-radius: 4px;
+
+      .handle-relative {
+        font-family: 'Gilroy';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+      }
+      .handle-opponent {
+        top: 0px;
+      }
+      .handle-mine {
+        bottom: 0px;
+      }
+      .history-buttons {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-around;
+
+        i{
+          color: white;
+          display: block;
+        }
+      }
+      .handle-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0px;
+  
+        i,
+        span {
+          color: white;
+          margin: 0px 10px;
+          cursor: pointer;
+          display: block;
+        }
+      }
+      .history-view{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-y: scroll;
+        background-color: #44433e;
+      }
+      .fas {
+        color: white;
+      }
+    }
+  }
+}

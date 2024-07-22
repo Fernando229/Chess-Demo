@@ -1,0 +1,89 @@
+.collection-page-container{
+
+  #chessboard-area{
+    width: 100%;
+  }
+  .filter-title{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B1B1B1;
+    margin-top: 20px;
+  }
+  .head-title{
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #B1B1B1;
+    margin-top: 20px;
+  }
+
+  .right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .right-content{
+      height: 100%;
+      padding: 24px;
+      margin: 20px 0px;
+      background-color: #1b1d25;
+      border: 2px solid #64676b;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // overflow-y: scroll;
+      
+      .nfts-area{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .pagination-area{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+  
+        .pagination-container{
+          width: 240px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+  
+          span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #b1b1b1;
+            
+            i{
+              color: #b1b1b1;
+            }
+          }
+          .pagination-buttons{
+            padding: 0px 14px;
+            border: 1px solid #b1b1b1;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,31 @@
+.collection-card-container {
+  width: 200px !important;
+  height: 200px;
+  padding: 0px !important;
+  margin-bottom: 20px;
+  
+  .nft-card-image {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+
+    .nft-card-shortcut-container {
+      width: 32px;
+      height: 32px;
+      background-color: #262830;
+      border-radius: 5px;
+      position: relative;
+      top: 10px;
+      left: 10px;
+
+      .nft-card-shortcut {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,126 @@
+.nft-card-container {
+  width: 200px !important;
+  height: 300px;
+  padding: 0px !important;
+  background-color: #1b1d25;
+  border-radius: 10px;
+  border: 2px solid #353a3d;
+  margin-bottom: 20px;
+
+  .nft-card-image {
+    width: 100%;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .nft-card-badge {
+      display: block;
+      width: 72px;
+      height: 27px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #0469ff;
+      border-radius: 20px;
+      justify-content: center;
+      position: relative;
+      top: -14px;
+      left: 64px;
+
+      color: #ffffff;
+    }
+    .nft-card-shortcut-container {
+      width: 32px;
+      height: 32px;
+      background-color: #262830;
+      border-radius: 5px;
+      position: relative;
+      top: 133px;
+      left: 160px;
+
+      .nft-card-shortcut {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .nft-card-info {
+    padding: 14px;
+
+    .nft-card-title {
+      font-family: 'Orbitron';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      color: #ffffff;
+    }
+    .nft-card-owner {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+      color: #b1b1b1;
+    }
+    .nft-card-details {
+      display: flex;
+      justify-content: space-between;
+
+      .nft-card-price {
+        display: flex;
+        justify-content: space-between;
+
+        .fa-ethereum {
+          width: 26px;
+          height: 26px;
+          font-size: 18px;
+          display: flex;
+          background-color: rgba(255, 255, 255, 0.05);
+          border-radius: 26px;
+          color: #62688f;
+          justify-content: center;
+          align-items: center;
+
+          &::before {
+          }
+        }
+
+        .nft-card-value {
+          margin-left: 10px !important;
+        }
+      }
+      .nft-card-subscribe {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px;
+        background-color: rgba(255, 255,255, 0.05);
+        border-radius: 4px;
+        .nft-card-subscribe-badge{
+          margin-left: 10px;
+          color: #0469ff;
+        }
+        .nft-card-subscribe-count {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          display: flex;
+          align-items: center;
+          text-align: right;
+          color: #b1b1b1;
+        }
+      }
+    }
+  }
+}

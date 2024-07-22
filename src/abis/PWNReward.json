@@ -1,0 +1,343 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_pwn",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "active",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "gameId",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "creatorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "connectorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startTimestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "winnerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "base",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "add",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct PWNReward.GameInfo",
+				"name": "_gameInfo",
+				"type": "tuple"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_passport",
+				"type": "uint256"
+			}
+		],
+		"name": "distributeReward",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBlockTimestamp",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "getPWNBalanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_player",
+				"type": "address"
+			}
+		],
+		"name": "getWinCounts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "history",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "gameId",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "creatorAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "connectorAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "startTimestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "winnerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "base",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint8",
+				"name": "add",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_passport",
+				"type": "uint256"
+			}
+		],
+		"name": "issuePassport",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "pwnContract",
+		"outputs": [
+			{
+				"internalType": "contract IPWN",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "rewardAmount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_pwn",
+				"type": "address"
+			}
+		],
+		"name": "setPWNContract",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_rewardAmount",
+				"type": "uint256"
+			}
+		],
+		"name": "setRewardAmount",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "setTeamWallet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "teamWallet",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "winCounts",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

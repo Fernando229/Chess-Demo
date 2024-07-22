@@ -1,0 +1,52 @@
+.matching-dialog{
+  max-width: 262px!important;
+}
+.matching-content{
+  width: 262px;
+  height: 165px;
+  background-color: #1b1d1c!important;
+  border: 2px solid #767676!important;
+  justify-content: center;
+  align-items: center;
+
+  .matching-title{
+    font-size: 22px;
+    line-height: 33px;
+    color: #dadada;
+    text-shadow: 0px 10px 30px rgba(115, 67, 5, 0.5);
+  }
+
+  .matching-cancel-btn{
+    height: 40px; 
+    background: #BE9922;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 12px rgba(115, 67, 5, 0.5);
+    border-color: #decc90;
+    border-radius: 12px;
+    padding: 9px 25px;
+    gap: 12px;
+    color: white;
+    font-size: 14px;
+    line-height:21px;
+    display: flex;
+    margin-top: 20px;
+  
+    &:hover{
+      background-color: #BE9922; 
+      border-color: #decc90;
+    }
+  }
+
+  .close-button{
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #8b8a88;
+    color: white;
+    border-radius: 22px;
+    text-align: center;
+    top: -11px;
+    right: -11px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,10 @@
+.play-page-container{
+  align-items: center;
+  height: 100%;
+
+  .profile-area, .quick-match-area, .puzzle-area{
+    width: 100%;
+    height: 90%;
+    flex-wrap: nowrap;
+  }
+}
