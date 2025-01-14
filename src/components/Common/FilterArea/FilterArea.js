@@ -11,9 +11,9 @@ const FilterArea = ({
   setColor,
   pClass,
   setPClass,
-  bCount,
+  bCount,                          
   setBCount,
-  setSPiece,
+  setSPiece,                      
   setSStyle
 }) => {
   const handleClickStatus = (e) => {
