@@ -10,11 +10,11 @@ const Spinner = ({ show, hideAction }) => {
     <Modal
       className="Spinner"
       contentClassName="spinner-modal-content"
-      dialogClassName="spinner-modal-dialog"
+      dialogClassName="spinner-modal-dialog"                    
       show={show}
       onHide={hideAction}
       backdrop="static"
-      keyboard={false}
+      keyboard={false}                       
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >

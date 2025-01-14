@@ -13,12 +13,12 @@ exports.sendEmail = mailingData => {
   });
   return transporter
     .sendMail(mailingData)
-    .then(info =>{
-       console.log(`Message sent: ${info.response}`)
-      })
+    .then(info => {
+      console.log(`Message sent: ${info.response}`)
+    })
     .catch(err => {
       console.log(`Problem sending email: ${err}`)
-      err.message ='There was a problem while sending a email'
+      err.message = 'There was a problem while sending a email'
       throw err
     });
 };

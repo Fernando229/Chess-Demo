@@ -440,28 +440,28 @@ const Collection = () => {
               setBCount={setBCount}
               setSPiece={setSPiece}
               setSStyle={setSStyle}
-              />
+            />
           </Col>
           <Col className='right-container' xs={8} md={9}>
             <div className='right-content'>
               <div className='nfts-area'>
-              {nfts.map((card, index) =>
-                (index >= 12 * (page - 1) && index < 12 * page) &&
-                <NFTCard
-                  key={index}
-                  sale={card.sale}
-                  avatar={blackRook}
-                  shortcut={shortcut}
-                  name={card.name}
-                  owner={card.owner}
-                  price={5.65}
-                  sponsored={card.sponsored}
-                  subscription={card.subscription}
-                  selected={mData[sPiece] === card.pId}
-                  handleClickCard={() => handleClickCard(card)}
-                />
-              )
-              }
+                {nfts.map((card, index) =>
+                  (index >= 12 * (page - 1) && index < 12 * page) &&
+                  <NFTCard
+                    key={index}
+                    sale={card.sale}
+                    avatar={blackRook}
+                    shortcut={shortcut}
+                    name={card.name}
+                    owner={card.owner}
+                    price={5.65}
+                    sponsored={card.sponsored}
+                    subscription={card.subscription}
+                    selected={mData[sPiece] === card.pId}
+                    handleClickCard={() => handleClickCard(card)}
+                  />
+                )
+                }
               </div>
               <Pagination count={Math.ceil(nfts.length / 12)} page={page} setPage={setPage} />
             </div>

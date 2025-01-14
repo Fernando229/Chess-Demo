@@ -59,14 +59,14 @@ const WalletConnectBtn = () => {
     <div>
       {walletAddress
         ? (
-        <div className='wallet-container'>
-          <span className="wallet-address-str">{formatAddress(walletAddress)}</span>
-          <Button className="wallet-btn" onClick={onClickDisconnect}>Connected</Button>
-        </div>
-          )
+          <div className='wallet-container'>
+            <span className="wallet-address-str">{formatAddress(walletAddress)}</span>
+            <Button className="wallet-btn" onClick={onClickDisconnect}>Connected</Button>
+          </div>
+        )
         : (
-        <Button className="wallet-btn" onClick={onClickConnectWallet}>Connect</Button>
-          )}
+          <Button className="wallet-btn" onClick={onClickConnectWallet}>Connect</Button>
+        )}
     </div>
   )
 }

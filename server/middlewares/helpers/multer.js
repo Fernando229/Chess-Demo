@@ -13,21 +13,21 @@ const storageByUser = multer.diskStorage({
 })
 
 //admin's..
-const storage =  multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, './public/uploads')
-    },
-    filename: function (req, file, cb) {
-      cb(null, file.fieldname + '-' + req.profile._id + '-' + Date.now() + path.extname(file.originalname))
-    }
-  })
-  //superadmin's..
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/uploads')
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + req.profile._id + '-' + Date.now() + path.extname(file.originalname))
+  }
+})
+//superadmin's..
 const storageBySuperAdmin = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, './public/uploads')
   },
   filename: function (req, file, cb) {
-    cb(null, file.fieldname + '-' + req.admin.role +req.admin._id + '-' + Date.now() + path.extname(file.originalname))
+    cb(null, file.fieldname + '-' + req.admin.role + req.admin._id + '-' + Date.now() + path.extname(file.originalname))
   }
 })
 
@@ -45,9 +45,9 @@ const limits = { fileSize: 2480 * 3230 }
 //   { name: "citizenshipBack", maxCount: 1 },
 //   { name: "businessLicence", maxCount: 1 }
 // ]);
-exports.uploadAdminDoc = multer({ storage,fileFilter,limits }).single("doc");
+exports.uploadAdminDoc = multer({ storage, fileFilter, limits }).single("doc");
 exports.uploadAdminPhoto = multer({ storage, fileFilter, limits }).single("photo");
 exports.uploadUserPhoto = multer({ storage: storageByUser, fileFilter, limits }).single("photo");
 
-exports.uploadProductImages = multer({ storage, fileFilter, limits }).array("productImages",5)
-exports.uploadBannerPhoto = multer({ storage:storageBySuperAdmin ,fileFilter, limits: { fileSize: 8480 * 4230 } }).single("bannerPhoto")
+exports.uploadProductImages = multer({ storage, fileFilter, limits }).array("productImages", 5)
+exports.uploadBannerPhoto = multer({ storage: storageBySuperAdmin, fileFilter, limits: { fileSize: 8480 * 4230 } }).single("bannerPhoto")

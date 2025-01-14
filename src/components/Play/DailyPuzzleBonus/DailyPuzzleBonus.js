@@ -11,5 +11,5 @@ const DailyPuzzleBonus = () => {
     </Row>
   )
 }
-
+                                                               
 export default DailyPuzzleBonus

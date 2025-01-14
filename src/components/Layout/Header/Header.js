@@ -34,26 +34,26 @@ export const Header = () => {
 
   return (
     <Navbar expand="lg" className="container header-container">
-        <Navbar.Brand className="brand" onClick={(e) => { e.preventDefault(); navigate('/') }}>ChessX</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="me-auto">
-            {
-              routes.map((ele) => (
-                  <Nav.Link key={ele.name} onClick={(e) => { e.preventDefault(); navigate(ele.route) }}>
-                    <span className="menu-item">
-                      {ele.name}
-                    </span>
-                  </Nav.Link>
-              )
-              )
-            }
-          </Nav>
-          <div className="d-flex form-container">
-            <Search className="search-icon" size={20} />
-            <WalletConnectBtn />
-          </div>
-        </Navbar.Collapse>
+      <Navbar.Brand className="brand" onClick={(e) => { e.preventDefault(); navigate('/') }}>ChessX</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav className="me-auto">
+          {
+            routes.map((ele) => (
+              <Nav.Link key={ele.name} onClick={(e) => { e.preventDefault(); navigate(ele.route) }}>
+                <span className="menu-item">
+                  {ele.name}
+                </span>
+              </Nav.Link>
+            )
+            )
+          }
+        </Nav>
+        <div className="d-flex form-container">
+          <Search className="search-icon" size={20} />
+          <WalletConnectBtn />
+        </div>
+      </Navbar.Collapse>
     </Navbar>
   )
 }
