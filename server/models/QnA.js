@@ -14,7 +14,7 @@ const qnaSchema = new mongoose.Schema({
             type: Schema.Types.ObjectId,
             ref: "user",
         },
-        questionedDate:{
+        questionedDate: {
             type: Date
         },
         answer: {

@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
     loginDomain: {
         type: String,
         default: "system",//can be facebook, google as well
-        enum:['system', 'facebook', 'google']
+        enum: ['system', 'facebook', 'google']
     },
     password: {
         type: String,
@@ -37,12 +37,12 @@ const userSchema = new mongoose.Schema({
     socialPhoto: {
         type: String
     },
-    dob:{
+    dob: {
         type: String
     },
-    gender:{
-        type:String,
-        enum:['male','female','other']
+    gender: {
+        type: String,
+        enum: ['male', 'female', 'other']
     },
     resetPasswordLink: {
         type: String,
@@ -89,7 +89,7 @@ userSchema.pre('save', function (next) {
 })
 userSchema.statics.findByCredentials = async function (email, password) {
     let User = this;
-    const user = await User.findOne({ email, loginDomain:'system' })
+    const user = await User.findOne({ email, loginDomain: 'system' })
     if (!user) return ''
     let passwordData = sha512(password, user.salt)
     if (passwordData.passwordHash == user.password) {
